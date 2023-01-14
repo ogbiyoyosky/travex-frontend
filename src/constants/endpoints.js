@@ -1,0 +1,16 @@
+export default Object.freeze({
+  LOGIN: `/api/login`,
+  CREATE_USER: '/api/register',
+  CREATE_BUSINESS: '/api/business/register',
+  PROFILE: `/api/profile`,
+  USERS: `/api/masteradmin/users`,
+  LOCATION: (id) => `/api/locations/${id}`,
+  MASTER_LOCATIONS: `/api/admin/locations`,
+  CREATE_LOCATION_BY_MASTER_ADMIN: `/api/masteradmin/locations`,
+  MY_LOCATION: `/api/profile/locations`,
+  APPROVE_LOCATION: (id) => `/api/locations/${id}/approve`,
+  ADD_REVIEW: (id) => `/api/locations/${id}/reviews`,
+  APPROVE_REVIEW: (id) => `/api/locations/${id}/reviews/approveReview`,
+  ADD_REPLY: (id) => `/api/locations/${id}/reviews/addComment`,
+  APPROVE_REPLY: (id) => `/api/locations/${id}/comments/approveReply`,
+});

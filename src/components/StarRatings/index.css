@@ -1,0 +1,17 @@
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.on {
+  color: #fdcc0d;
+}
+.off {
+  color: #ccc;
+}
